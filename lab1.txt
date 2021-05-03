@@ -1,0 +1,40 @@
+using System;
+
+namespace LAB2ASS
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 5;
+            double[] marks = [ 90, 80, 70, 80, 90];
+            double [] cgpa = cgpacalc(marks, n);
+            Console.WriteLine("CGPA = " + cgpa);
+            Console.WriteLine("CGPA percentage = {0: F2}" cgpa * 9.5);
+        }
+    }
+    class Assesment
+    {
+
+    
+    public static double cgpacalc( double [] marks, int n)
+        //variable to store grade in every subject 
+        double [] grade = new double [n];
+        // variable to store cgpa and the sum of all grades
+        double cgpa, sum = 0;
+    }
+
+        // computing the grades
+        for(int i = 0; i < n; i++)
+        {
+            sum += grade[i];
+
+        }
+        // computing the cgpa
+        cgpa = sum / n;
+        return cgpa;
+
+        // main code
+    }    
+    }
+}
